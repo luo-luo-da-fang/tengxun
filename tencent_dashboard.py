@@ -313,7 +313,7 @@ def generate_qr_code(url):
     buf.seek(0)
     return Image.open(buf)
 
-local_url = "http://localhost:8501"
+local_url = "https://tengxun-umfaohgf6qpaovcfto5kcw.streamlit.app"
 qr_pic = generate_qr_code(local_url)
 st.image(qr_pic, caption="扫码进入腾讯财报分析看板", width=200)
 
